@@ -9,32 +9,32 @@
                     <h1 class="text-center titleFont">Cadastre-se para se conectar</h1>
                     <div class="form-group colorFont">
                         <label for="nome">Nome completo</label>
-                        <input class="form-control" type="text" name="nome" id="nome"
-                            placeholder="Informe seu nome completo">
+                        <input [(ngModel)]='user.nome' class="form-control" type="text" name="nome" id="nome"
+                            placeholder="Informe seu nome completo" >
                     </div>
                     <div class="form-group colorFont">
-                        <label for="email">E-mail</label>
-                        <input class="form-control" type="text" name="email" id="email"
+                        <label  for="email">E-mail</label>
+                        <input [(ngModel)]='user.usuario' class="form-control" type="text" name="email" id="email"
                             placeholder="Informe seu melhor e-mail">
                     </div>
                     <div class="form-group colorFont">
                         <label for="foto">Link da foto</label>
-                        <input class="form-control" type="text" name="foto" id="foto"
+                        <input [(ngModel)]='user.foto' class="form-control" type="text" name="foto" id="foto"
                             placeholder="Cole aqui o link da sua foto">
                     </div>
                     <div class="form-group colorFont">
                         <label for="senha">Senha</label>
-                        <input class="form-control" type="password" name="senha" id="senha"
+                        <input (input)='confirmSenha($event)' class="form-control" type="password" name="senha" id="senha"
                             placeholder="Senha para acesso">
                     </div>
                     <div class="form-group colorFont">
                         <label for="confirmarSenha">Confirmar Senha</label>
-                        <input class="form-control" type="password" name="confirmarSenha" id="confirmarSenha"
+                        <input [(ngModel)]='user.senha' class="form-control" type="password" name="confirmarSenha" id="confirmarSenha"
                             placeholder="Confirme sua senha">
                     </div>
                     <div class="form-group colorFont">
                         <label for="tipoUsuario">Tipo de usuário</label>
-                        <select name="tipoUsuario" id="tipoUsuario" class="form-control">
+                        <select name="tipoUsuario" id="tipoUsuario" class="form-control" (change)='tipoUser($event)'>
                             <option>Selecione um tipo de usuário</option>
                             <option value="normal">Normal</option>
                             <option value="adm">Administrador</option>
@@ -44,7 +44,7 @@
                         <button type="submity" class="btn btn-outline-danger mr-4" routerLink='/entrar'>
                             <i class="fa fa-times" aria-hidden="true"></i>
                             Cancelar</button>
-                        <button type="submity" class="btn btn-outline-success ml-4">
+                        <button type="submity" class="btn btn-outline-success ml-4" (click)='cadastrar()'>
                             <i class="fa fa-check" aria-hidden="true"></i>
                             Cadastrar</button>
                     </div>

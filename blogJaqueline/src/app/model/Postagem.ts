@@ -10,5 +10,4 @@ export class Postagem{
     public tema: Tema
     public usuario: User
     
-
 }
