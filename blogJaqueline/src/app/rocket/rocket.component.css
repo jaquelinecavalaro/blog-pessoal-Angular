@@ -15,7 +15,8 @@
     align-items: center;
 }
 
-.scene i {
+.scene i 
+{
     position: absolute;
     top: -250px;
     background: rgba(255, 255, 255, 0.5);
