@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from '../model/User';
-import { UserLogin } from '../model/UserLogin';
 import { AuthService } from '../service/auth.service';
 
 @Component({
@@ -11,15 +10,13 @@ import { AuthService } from '../service/auth.service';
 })
 export class CadastrarComponent implements OnInit {
 
-  user: User = new User
+  user: User = new User()
   tipoUsuario: string
   confirmarSenha: string
 
   constructor(
     private authService: AuthService,
     private router: Router
-      
-    
     ) { }
 
   ngOnInit() {
@@ -29,7 +26,6 @@ export class CadastrarComponent implements OnInit {
 
   confirmSenha(event: any){
     this.confirmarSenha = event.target.value
-
   }
 
   tipoUser(event: any){
