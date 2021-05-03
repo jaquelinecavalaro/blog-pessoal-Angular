@@ -1,5 +1,4 @@
-<div id="trocaMenu">
-<div class="menu" >
+<div class="menu">
     <div class="container">
         <div class="row">
             <div class="col-6 text-center mt-5">
@@ -15,9 +14,7 @@
 </div>
 
 <nav class="navbar navbar-expand-lg menu shadowNav">
-        <img *ngIf='authService.logado()' src="{{authService.dadosUser().foto}}" alt="Img User" width="50px" height="50px" class="img-fluid rounded-circle">
-    
-    <a *ngIf='authService.logado()' class="navbar-brand corLetras ml-5" href="#">HELLO! {{authService.dadosUser().nome}}</a>
+    <a class="navbar-brand corLetras ml-5" href="#">HELLO!</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
@@ -66,4 +63,3 @@
         </ul><!--/ICONES-->
     </div>
 </nav>
-</div>
