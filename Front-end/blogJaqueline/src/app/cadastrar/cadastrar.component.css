@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+#img-bg{
+    background-image: url('../../assets/img/backgroundcadatro.jpg');
+    min-height: 695px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.menu{
+    background-color: #141414;
+}
+.titleFont{
+   
+    font-size: 30;
+    color: #cc71e6;
+    font-family: 'VT323', monospace;
+    
+}
+.colorFont{
+    color:aliceblue;
+    
+}
+.btn-outline-success{
+    background-color: white;
+    border-color: #a63fbd;
+    color: #a63fbd;
+}
+.btn-outline-success:hover{
+    background-color: #a63fbd;
+    border-color: white;
+    color: white;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 47px -6px rgba(54,30,60,0.42); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 0px 47px -6px rgba(54,30,60,0.42);
+}
+.btn-outline-danger{
+    background-color: white;
+    border-color: #cf2f64;
+    color: #cf2f64;
+}
+.btn-outline-danger:hover{
+    background-color: #cf2f64;
+    border-color: white;
+    color: white;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 47px -6px rgba(54,30,60,0.42); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 0px 47px -6px rgba(54,30,60,0.42);
+}

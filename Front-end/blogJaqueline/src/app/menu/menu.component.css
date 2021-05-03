@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body{
+    background-color: #141414;
+}
+.bannerFont{
+    font:bold;
+    font-size: 30;
+    color: #cc71e6;
+    font-family: 'Press Start 2P', sans-serif;
+    margin-top: 50px;
+}
+.iconeFont{
+    color:aliceblue;
+}
+#subTitle{
+    font-size: 20;
+}
+.menu{
+    background-color: #141414;
+}
+.corLetras{
+   color: aliceblue;
+}
+.shadowNav{
+    -webkit-box-shadow: 5px 5px 48px 1px #26152A; 
+    box-shadow: 5px 5px 48px 1px #26152A;
+}
+.iconLetra:hover{
+    color: #cc71e6;
+}
+.titleFont{
+    color: #cc71e6;
+    font-family: 'VT323', monospace;
+    font-size: 30;
+}

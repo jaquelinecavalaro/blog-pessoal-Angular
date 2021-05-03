@@ -1,0 +1,37 @@
+<div class="menu continer-fluid">
+    <div class="row d-flex ">
+        <div class="col-md-6">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+                    <h3 class="text-center mb-5 titleFont mb-5">Olá, Entre em contato comigo e participe dos fóruns!</h3>
+                    <h5 class="mb-5 colorFont text-center">Conecte-se:</h5>
+
+                    <div class="form-group colorFont">
+                        <label for="usuario">E-mail</label>
+                        <input [(ngModel)]='userLogin.usuario' class="form-control" type="text" name="usuario" id="usuario"
+                            placeholder="Informe seu melhor e-mail">
+                    </div>
+                    <div class="form-group colorFont">
+                        <label for="usuario">Senha</label>
+                        <input [(ngModel)]='userLogin.senha' class="form-control" type="password" name="senha" id="senha"
+                            placeholder="Informe sua senha">
+                    </div>
+                    <div class="d-flex justify-content-center colorFont">
+                        <button type="submit" class="btn btn-outline-success" (click)='entrar()'>Entrar</button>
+                    </div>
+                    <hr class="mt-5 mb-5 ">
+                    <p class="text-center colorFont">
+                        Não possue cadastro ainda? <a routerLink='/cadastrar' class="cadatrese mt-5 mb-5">Cadastre-se</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6" id='img-bg'>
+            <!--backGround-->
+
+        </div>
+        <!--/backgroud-->
+    </div>
+</div>
