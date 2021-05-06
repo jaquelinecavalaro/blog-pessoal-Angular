@@ -22,13 +22,13 @@ export class InicioComponent implements OnInit {
     }
   }
 
-  //ISSO EH PRA COLOCAR NO MENU QUANDO FOR ESTILIZAR
- /*  sair(){
-    this.router.navigate({'/entrar'})
+ 
+  sair(){
+    this.router.navigate(['/entrar'])
     environment.token = ''
     environment.nome = ''
     environment.foto = ''
     environment.id = 0
-  } */
+  }
 
 }
