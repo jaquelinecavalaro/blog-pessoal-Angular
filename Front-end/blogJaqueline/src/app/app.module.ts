@@ -13,6 +13,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { RocketComponent } from './rocket/rocket.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
+import { TemaComponent } from './tema/tema.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
     CadastrarComponent,
     RocketComponent,
     InicioComponent,
-    MenuLogadoComponent
+    MenuLogadoComponent,
+    TemaComponent
   ],
   imports: [
     BrowserModule,
