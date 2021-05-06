@@ -14,6 +14,8 @@ import { RocketComponent } from './rocket/rocket.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
 import { TemaComponent } from './tema/tema.component';
+import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { TemaComponent } from './tema/tema.component';
     RocketComponent,
     InicioComponent,
     MenuLogadoComponent,
-    TemaComponent
+    TemaComponent,
+    TemaEditComponent,
+    TemaDeleteComponent
   ],
   imports: [
     BrowserModule,

@@ -25,11 +25,15 @@ export class TemaComponent implements OnInit {
       this.router.navigate(['/entrar'])
     }
 
-    this.findAllTema() /* QUERO Q APAREÇA QUANDO A TELA INICIAR */
+    
+    if(environment.token != ''){
+      this.findAllTema() /* QUERO Q APAREÇA QUANDO A TELA INICIAR */
+    }
 
   }
 
   findAllTema(){
+    
     this.temaService.getAllTema().subscribe((resp: Tema[])=>{
       this.listaTemas = resp
     })
