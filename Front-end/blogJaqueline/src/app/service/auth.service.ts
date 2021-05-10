@@ -11,14 +11,14 @@ import { UserLogin } from '../model/UserLogin';
 export class AuthService {
 
   constructor(private http: HttpClient) { }
-  
+
 
   entrar(userLogin: UserLogin): Observable<UserLogin>{
   return this.http.post<UserLogin>('http://localhost:8080/usuarios/logar', userLogin)
 }
 
   cadastrar(user: User): Observable<User>{
-  
+
   return this.http.post<User>('http://localhost:8080/usuarios/cadastrar', user)
 
 }
@@ -30,6 +30,10 @@ export class AuthService {
     }
     return ok
 
+  }
+
+  getByIdUSer(id: number): Observable<User>{
+    return this.http.get<User>(`http://localhost:8080/usuarios/${id}`)
   }
 
   dadosUser(){
