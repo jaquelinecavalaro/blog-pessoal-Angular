@@ -1,27 +1,29 @@
 <div class="container-fluid backgroundInicio">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-12">
-                        <a (click)='sair()' class="m-0 font-weight-bold text-white fs-16 ">Sair<i class="fa fa-sign-out"
-                                aria-hidden="true"></i></a>
-                    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <a (click)='sair()' class="m-0 font-weight-bold text-white fs-16 ">Sair<i class="fa fa-sign-out"
+                            aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
-
+    </div>
+    <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-md-6">
-                        <h1>Expresse aqui seus pensamentos e opniões:</h1>
+                    <div class="col-md-6 fontText">
+                        <h3 class="bashAmarelo ">Expresse aqui seus <span class="bashAzul">pensamentos </span>e <span
+                                class="bashAzul">opniões</span>:</h3>
+
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center mt-3 mb-5">
                     <div class="col-md-6">
-                        <button class="btn" data-toggle="modal" data-target="#novaPostagem"> Nova Postagem </button>
-                        <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
+                        <button class="btn bashVerde" data-toggle="modal" data-target="#novaPostagem"> Nova Postagem </button>
+                        <a class="btn btn-outline-light bashVerde" href="#postagens">Ver Postagens</a>
                     </div>
                 </div>
 
@@ -38,11 +40,11 @@
 <div class="container" id="postagens">
     <nav>
         <div class="nav nav-tabs d-flex justify-content-center mt-5 -mb-5" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="nav-todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab"
-                aria-controls="nav-todasPostagens" aria-selected="true">Todas as Postagens</a>
+            <a class="nav-item nav-link active" id="nav-todasPostagens-tab" data-toggle="tab" href="#todasPostagens"
+                role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as Postagens</a>
 
-            <a class="nav-item nav-link" id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab"
-                aria-controls="minhasPostagens" aria-selected="false">Minhas Postagens</a>
+            <a class="nav-item nav-link" id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens"
+                role="tab" aria-controls="minhasPostagens" aria-selected="false">Minhas Postagens</a>
 
             <a class="nav-item nav-link" id="nav-postagemTema-tab" data-toggle="tab" href="#postagemTema" role="tab"
                 aria-controls="nav-contact" aria-selected="false">Postagens por tema</a>
@@ -74,43 +76,45 @@
 
 <!--MODAL-->
 
-  <!-- Modal -->
-  <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="TituloModalCentralizado">Nova Postagem</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <!--FORMULARIO-->
-        <div class="modal-body">
-          <div class="form-group">
-              <label for='titulo'>Título</label>
-              <input type="text" class="form-control" id="titulo" placeholder="Digite o título">
-          </div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="TituloModalCentralizado">Nova Postagem</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--FORMULARIO-->
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for='titulo'>Título</label>
+                    <input type="text" class="form-control" id="titulo" placeholder="Digite o título">
+                </div>
 
-          <div class="form-group">
-            <label for='titulo'>Texto</label>
-            <textarea type="text" class="form-control" id="titulo" placeholder="Digite o título"></textarea>
-        </div>
+                <div class="form-group">
+                    <label for='titulo'>Texto</label>
+                    <textarea type="text" class="form-control" id="titulo" placeholder="Digite o título"></textarea>
+                </div>
 
-        <div class="form-group">
-            <label for='titulo'>Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'> cadastre um novo</a>:</label>
-            <select class="form-control" name='tema' id="tema">
-            <option value="">Temas</option>
+                <div class="form-group">
+                    <label for='titulo'>Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'> cadastre um
+                            novo</a>:</label>
+                    <select class="form-control" name='tema' id="tema">
+                        <option value="">Temas</option>
 
-            </select>
-        </div>
+                    </select>
+                </div>
 
+            </div>
+            <!--/FORMULARIO-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Publicar</button>
+            </div>
         </div>
-        <!--/FORMULARIO-->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary">Publicar</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 <!--/MODAL-->

@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&display=swap');
+
 .backgroundInicio{
     background-color: #141414;
+}
+
+.fontText{
+    font-family: 'Anaheim', sans-serif;
+}
+
+.bashAmarelo{
+    color: rgb(252, 255, 95);
+}
+.bashAzul{
+    color: rgb(0, 181, 236)
+}
+.bashVerde{
+    color: rgb(0, 255, 0);
 }
